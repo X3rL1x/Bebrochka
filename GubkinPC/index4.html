@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GubkinPC -  Excel Slayer</title>
+    <link rel="stylesheet" href="style1.css">
+	<link rel="manifest" href="manifest.json">
+	<script>
+		if ('serviceWorker' in navigator){
+			navigator.serviceWorker.register('/sw.js',{scope:'/'});
+		}
+	</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h1 >GubkinPC</h1>
+            </a>
+            <button id="menu-button"><></button>
+
+    <div id="menu" class="hidden">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index2.html">О нас</a></li>
+            <li><a href="index1.html">Обратная связь и покупки</a></li>
+			<li><a href="index3.html">Ассортимент</a></li>
+        </ul>
+    </div>
+
+    <script src="script1.js"></script>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="container">
+                <div class="product">
+                    <img src="pc1.jpg" alt="Excel Slayer">
+                </div>
+
+                <div class="product-info">
+                    <h2>Excel Slayer</h2>
+                    <p>Идеальный выбор для учебы!  </p>
+                    <h3>Характеристики:</h3>
+                    <ul Align = 'center'>
+                        <li Align = 'center'>Процессор: Intel Core i5-12400</li>
+                        <li Align = 'center'>Оперативная память: 16 ГБ DDR4</li>
+                        <li Align = 'center'>Видеокарта: NVIDIA GeForce GTX 1650</li>
+                        <li Align = 'center'>SSD: 500 ГБ NVMe</li>
+                        <li Align = 'center'>Материнская плата: ASUS PRIME B660M-A</li>
+                        <li Align = 'center'>Корпус: Aerocool Aero One</li>
+                    </ul>
+                    <h3>Цена: 75 000 рублей</h3> <!-- Вставьте реальную цену -->
+                    <a href="index1.html" class="button">Купить</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>GubkinPC.com 2024</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

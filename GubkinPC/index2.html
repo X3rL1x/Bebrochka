@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GubkinPC</title>
+    <link rel="stylesheet" href="style1.css">
+	<link rel="manifest" href="manifest.json">
+	<script>
+		if ('serviceWorker' in navigator){
+			navigator.serviceWorker.register('/sw.js',{scope:'/'});
+		}
+	</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h1 >GubkinPC</h1>
+            </a>
+            <button id="menu-button"><></button>
+    <div id="menu" class="hidden">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="index1.html">Обратная связь и покупки</a></li>
+			<li><a href="index3.html">Ассортимент</a></li>
+        </ul>
+    </div>
+
+    <script src="script1.js"></script>
+        </div>
+    </header>
+    <main>
+    <section class="about">
+            <div class="container">
+                <h2>О нас
+                <p Align = 'center'>GubkinPC - это больше, чем просто интернет-магазин комплектующих. Мы - команда энтузиастов, которые горят желанием помочь тебе собрать персональный компьютер, отвечающий всем твоим потребностям и желаниям.</p>
+                </h2>
+                <h3 Align='left' style="margin-left: 20px;">GubkinPC - это:</h3>
+                <ul Align='left' style="margin-left: 40px; margin-bottom: 20px;">
+                    <li style="margin-bottom: 10px;">Профессионализм: Наши специалисты имеют огромный опыт в сборке и настройке ПК, чтобы ты получил идеальный результат.</li>
+                    <li style="margin-bottom: 10px;">Качество: Мы используем только проверенные компоненты от известных производителей и строго контролируем качество сборки.</li>
+                    <li style="margin-bottom: 10px;">Доступность: Мы предлагаем конкурентные цены и различные варианты оплаты.</li>
+                    <li style="margin-bottom: 10px;">Прозрачность: Мы открыты для диалога и всегда готовы ответить на все твои вопросы.</li>
+                </ul>
+                <h3 Align='left' style="margin-left: 20px;">Мы предлагаем:</h3>
+                <ul Align='left' style="margin-left: 40px; margin-bottom: 20px;">
+                    <li style="margin-bottom: 10px;">Готовые сборки на любой вкус: От мощных игровых ПК до компактных и стильных систем для работы и мультимедиа.</li>
+                    <li style="margin-bottom: 10px;">Проверенные комплектующие: Мы используем только качественные компоненты от ведущих производителей, чтобы гарантировать надежность и производительность.</li>
+                    <li style="margin-bottom: 10px;">Оптимальные конфигурации: Наши сборки тщательно подобраны, чтобы обеспечить идеальное сочетание цены и производительности.</li>
+                    <li style="margin-bottom: 10px;">Быстрая доставка: Мы стремимся доставлять заказы как можно быстрее, чтобы ты смог насладиться своим новым ПК как можно скорее.</li>
+                    <li style="margin-bottom: 50px;">Гарантия: Мы предоставляем гарантию на все наши сборки, чтобы ты был спокоен за свой ПК.</li>
+                </ul>
+				<h2 style = 'margin-bottom: 50px;'>По всем вопросам просим обращаться во вкладке 'Обратная связь'</h2>
+				<a href="index1.html" class="button">Обратная связь</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>GubkinPC.com 2024</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

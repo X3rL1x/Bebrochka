@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GubkinPC</title>
+    <link rel="stylesheet" href="style1.css">
+	<link rel="manifest" href="manifest.json">
+	<script>
+		if ('serviceWorker' in navigator){
+			navigator.serviceWorker.register('/sw.js',{scope:'/'});
+		}
+	</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <h1 >GubkinPC</h1>
+            </a>
+			<button id="menu-button"><></button>
+
+    <div id="menu" class="hidden">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="index2.html">О нас</a></li>
+            <li><a href="index1.html">Обратная связь и покупки</a></li>
+			<li><a href="index3.html">Ассортимент</a></li>
+        </ul>
+    </div>
+
+    <script src="script1.js"></script>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h2>Найди свой идеальный ПК</h2>
+                    <p>Мы предлагаем широкий выбор готовых ПК для любых задач.</p>
+                    <a href="index3.html" class="button">Смотреть каталог</a>
+                </div>
+            </div>
+        </section>
+		<div class="slider">
+			<img src="pc1.jpg" alt="Изображение 1" class="slide">
+			<img src="pc2.jpg" alt="Изображение 2" class="slide">
+			<img src="pc3.jpg" alt="Изображение 3" class="slide">
+		</div>
+		<script> src='script.js'</script>
+        <section class="featured">
+            <div class="container">
+                <h2>Популярные модели</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="pc1.jpg" alt="ПК 1">
+                        <div class="product-info">
+                            <h3>Excel slayer</h3>
+                            <p>Мам, ну мне для учебы)</p>
+                            <!--<a href="#" class="button">Подробнее</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>О нас</h2>
+                <p>Мы - команда профессионалов из РГУ нефти и газа, которые любят компьютеры и хотят сделать их доступными для всех.</p>
+                <a href="index2.html" class="button">Узнать больше</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>GubkinPC.com 2024</p>
+        </div>
+    </footer>
+	<script src="script.js"></script>
+</body>
+</html>

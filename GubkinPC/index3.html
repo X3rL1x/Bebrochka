@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GubkinPC - Выбор модели ПК</title>
+    <link rel="stylesheet" href="style1.css">
+	<link rel="manifest" href="manifest.json">
+	<script>
+		if ('serviceWorker' in navigator){
+			navigator.serviceWorker.register('/sw.js',{scope:'/'});
+		}
+	</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h1 >GubkinPC</h1>
+            </a>
+            <button id="menu-button"><></button>
+
+    <div id="menu" class="hidden">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index2.html">О нас</a></li>
+            <li><a href="index1.html">Обратная связь и покупки</a></li>
+			<li><a href="#">Ассортимент</a></li>
+        </ul>
+    </div>
+
+    <script src="script1.js"></script>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h2>Выбери свой идеальный ПК</h2>
+                    <p>Найди сборку, которая идеально подойдет для твоих задач!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="container">
+                <h2>Наши модели</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="pc1.jpg" alt="ПК 1" >
+                        <div class="product-info">
+                            <h3>Excel slayer</h3>
+                            <p>Мам, ну мне для учебы)</p>
+                            <a href="index4.html" class="button">Подробнее</a> 
+                        </div>
+                    </div>
+					<div class="product">
+                        <img src="pc2.jpg" alt="ПК 2" style="margin-bottom: 10px;">
+                        <div class="product-info">
+                            <h3>Word slayer</h3>
+                            <p>Этому монстру даже макросы не страшны...</p>
+                            <a href="index5.html" class="button">Подробнее</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>GubkinPC.com 2024</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
